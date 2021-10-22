@@ -1,7 +1,9 @@
-import '../styles/globals.css'
+import useNavigationLoading from "hooks/useNavigationLoading";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const MyApp = ({ Component, pageProps }) => {
+  const loading = useNavigationLoading();
 
-export default MyApp
+  return loading ? <div>Loading...</div> : <Component {...pageProps} />;
+};
+
+export default MyApp;
