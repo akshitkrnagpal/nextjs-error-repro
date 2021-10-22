@@ -1,5 +1,6 @@
 module.exports = {
-  experimental: {
-    outputFileTracing: true,
+  i18n: {
+    defaultLanguage: "en",
+    locales: ["en", "nl"],
   },
 };
