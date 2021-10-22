@@ -1,9 +1,13 @@
 import { useRouter } from "next/router";
 
 const Page = () => {
-  const { query } = useRouter();
-  if (query.slug === "page-a") return <div>This page works</div>;
-  return <div>This page may not work</div>;
+  const { asPath } = useRouter();
+  const url = new URL(asPath, "https://example.com");
+  return (
+    <Head>
+      <link rel="canonical" href={url.href} />
+    </Head>
+  );
 };
 
 export const getStaticProps = async () => {
