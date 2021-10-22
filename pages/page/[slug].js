@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 const Page = () => {
   const { asPath } = useRouter();
