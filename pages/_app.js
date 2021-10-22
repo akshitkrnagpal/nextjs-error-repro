@@ -1,7 +1,8 @@
-import '../styles/globals.css'
+import { subtract } from "lodash";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const MyApp = ({ Component, pageProps }) => {
+  console.log(subtract(4, 2));
+  return <Component {...pageProps} />;
+};
 
-export default MyApp
+export default MyApp;
