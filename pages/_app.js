@@ -1,4 +1,4 @@
-import useNavigationLoading from "hooks/useNavigationLoading";
+import useNavigationLoading from "../src/hooks/useNavigationLoading";
 
 const MyApp = ({ Component, pageProps }) => {
   const loading = useNavigationLoading();
