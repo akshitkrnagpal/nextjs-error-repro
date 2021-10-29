@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
 
-const Page = ({ category }) => {
+const Page = () => {
   const { route, asPath } = useRouter();
   return (
     <div>
